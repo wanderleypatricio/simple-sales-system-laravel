@@ -1,0 +1,210 @@
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #fff;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .container{
+    min-height:200px;
+  }
+
+  .pagination li.active{
+      background-color:#ffa000;
+      color: #fff;
+      width: 10px;
+  }
+
+  h3{
+    font-family: 'Roboto 700';
+  }
+
+  .slider{
+    width: 100%;
+    height: 500px;
+  }
+
+  nav{
+    height:100px;
+  }
+
+  .card {
+    width: 300px;
+    height: 400px; 
+    float:left;
+    margin-left: 5  px;
+  }
+  .card img{
+    border-radius: 80px;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  .card p{
+    margin: 5px;
+    text-align: justify;
+  }
+
+  .servicos{
+    width: 143%;
+    background: #1a237e;
+    border: 1px #536dfe solid;
+    height: 1000px;
+    margin-left: -200px;
+  }
+
+  .servicos .card{
+    margin-left: 20px;
+    padding: 10px;
+
+  }
+  .slider h3{
+      color: #fff;
+  }
+
+  .slider{
+    width: 80%;
+  }
+
+  .content{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px #fff solid;
+  }
+
+  .depoimentos{
+    background-image:url('../img/fundo/background001.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 1px #1a237e solid;
+    width: 143%;
+    height: 1000px;
+    margin-left: -200px;
+  }
+
+  .depoimentos .card{
+    border-radius: 100%;
+    width: 300px; 
+    height: 400px; 
+    background:#e4e4e4;
+    float:left;
+    animation-name: moverQuadrado;
+    animation-duration: 2s;
+    animation-delay: 2s;
+  }
+
+  .depoimentos .card p{
+    width: 70%;
+    text-align: justify;
+    margin: 0 auto;
+    margin-top: 50%;
+    font-style: italic;
+  }
+
+  .depoimentos .card span{
+    width: 70%;
+    text-align: justify;
+    margin-left: 60%;
+    margin-top: 50%;
+    font-style: italic;
+  }
+
+  @keyframes moverQuadrado {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 500px;
+    }    
+}
+
+  .equipe{
+    background: #fff;
+    border: 1px #1a237e solid;
+    width: 143%;
+    height: 1000px;
+    margin-left: -200px;
+  }
+
+  .equipe h3{
+    color: black;
+  }
+
+  .equipe .card{
+    border-radius: 20%;
+    margin-left: 10px;
+    width: 200px; 
+    display: flex;
+    height: 300px; 
+    background:#e4e4e4;
+    float:left;
+  }
+
+  .equipe .card{
+    padding-top: 10px;
+  }
+
+  .equipe .card p{
+    margin-top: 150px;
+    margin-left: -135px;
+    color:#333;
+  }
+
+  .rodape{
+    margin-top: 20px;
+    background-color: #212121;
+    width: 115%;
+    color: #e4e4e4;
+    margin-left: -200px;
+  }
+
+ .contato{
+    background-color: #1a237e;
+    width: 143%;
+    margin-left: -200px;
+  }
+
+  .contato .content {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 0px;
+    color: #e4e4e4;
+    border-radius: 30px;
+  }
+
+  .contato .localizacao{
+    margin:0 auto;
+    width: 60%;
+    margin-top: 30px;
+  }
+
+  .slider{
+    width: 500px;
+  }
+
+.produtos{
+  width: 143%;
+  margin-left: -200px;
+}
+
+.produtos .content{
+  width: 100%;
+  border: #1a237e 1px solid;
+}
+
+.produtos .card{
+  float: left;
+  border:1px #1a237e solid;
+  margin-left: 10px;
+}
+
+.produtos .card img{
+  width: 100px;
+  margin-left: -60px;
+}

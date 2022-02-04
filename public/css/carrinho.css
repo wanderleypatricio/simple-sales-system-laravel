@@ -1,0 +1,97 @@
+.cabecalho-carrinho{
+    padding: 10px;
+    height: 40px;
+}
+
+.itens-carrinho{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    padding-top: 10px;
+    border-bottom: 1px #666 solid;
+}
+.img-produto-carrinho{
+    width: 10%;
+    height: 60px;
+    float: left;
+}
+
+.descricao-produto-carrinho{
+    width: 40%;
+    height: 60px;
+    float: left;
+    text-align: center;
+}
+
+.qtde-itens-produto-carrinho{
+    width: 8%;
+    height: 60px;
+    float: left;
+}
+
+.preco-item-produto-carrinho{
+    margin-left: 50px;
+    width: 8%;
+    height: 60px;
+    float: left;
+}
+.preco-item-final-produto-carrinho{
+    margin-left: 50px;
+    width: 8%;
+    height: 60px;
+    float: left;
+}
+.acoes-produto-carrinho{
+    margin-left: 50px;
+    width: 8%;
+    height: 60px;
+    float: left;
+}
+
+.cabecalho-img-produto-carrinho{
+    width: 10%;
+    float: left;
+}
+
+.cabecalho-descricao-produto-carrinho{
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+
+.cabecalho-qtde-itens-produto-carrinho{
+    width: 8%;
+    float: left;
+}
+
+.cabecalho-preco-item-produto-carrinho{
+    margin-left: 50px;
+    width: 8%;
+    float: left;
+}
+.cabecalho-preco-item-final-produto-carrinho{
+    margin-left: 50px;
+    width: 8%;
+    float: left;
+}
+.cabecalho-acoes-produto-carrinho{
+    margin-left: 50px;
+    width: 8%;
+    float: left;
+}
+
+.finalizar-compra{
+    width: 70%;
+    position: absolute;
+    margin-top: 130px;
+    margin-top: 30px;
+    text-align: right;
+}
+
+.valor-total{
+    width: 100%;
+    height: 60px;
+    margin-top: 30px;
+    text-align: right;
+    font-size: 2em;
+}
