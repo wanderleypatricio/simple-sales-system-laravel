@@ -62,6 +62,7 @@
                 Itens da Venda:
                 <div class="itens-venda input-field">
                     <div id="lista-itens">
+                        {{$itensPedido}}
                         <table id="tableitem" class="centered responsive-table highlight striped">
                             <thead>
                                 <tr>

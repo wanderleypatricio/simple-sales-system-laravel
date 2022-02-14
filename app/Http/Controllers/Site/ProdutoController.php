@@ -11,7 +11,9 @@ use Illuminate\Support\Facades\DB;
 class ProdutoController extends Controller
 {
     public function index() {
-        $produtos = Produtos::all();
+        $produtos  = DB::table('produtos')->join('galerias','produtos.id','=','galerias.produto_id')
+        ->where('ordem','=','1')->select('produtos.*', 'galerias.imagem')->get();
+        
         return view('layouts._site.produto.index', ['produtos' => $produtos]);
     }
 

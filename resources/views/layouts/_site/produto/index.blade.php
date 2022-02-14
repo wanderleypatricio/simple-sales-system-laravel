@@ -32,10 +32,12 @@
         <tr>
             <td>{{$produto->id}}</td>
             <td>{{$produto->titulo}}</td>
+            <td><img src="{{asset($produto->imagem)}}" width="60"/></td>
+
             <td>
                 <a class="material-icons" href="{{route('site.produto.editar',$produto->id)}}" title="Editar">edit</a>
                 <a class="material-icons" href="javascript:if(confirm('Deseja excluir este registro?')){window.location.href = '{{route('site.produto.excluir',$produto->id)}}'}" title="Excluir">delete</a>
-                <a style="width: 130px;float: left;" class="material-icons" href="{{route('site.galerias',$produto->id)}}" title="Add imagem">image</a>
+                <a class="material-icons" href="{{route('site.galerias',$produto->id)}}" title="Add imagem">image</a>
             </td>
         </tr>
         @endforeach

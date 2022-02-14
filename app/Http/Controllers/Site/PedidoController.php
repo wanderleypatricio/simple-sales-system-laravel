@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\DB;
 class PedidoController extends Controller
 {
     public function index() {
-        $pedidos = Pedido::all();
+        //$pedidos = Pedido::all();
+        $pedidos = DB::table('pedidos')->join('clientes','pedidos.cliente_id','=','clientes.id')
+        ->select('pedidos.*', 'clientes.nome')->get();
         return view('layouts._site.pedidos.index', ['pedidos' => $pedidos]);
     }
     
@@ -54,6 +56,7 @@ class PedidoController extends Controller
     public function editar($id) {
         $pedido = Pedido::find($id);
         $itensPedido = json_encode(DB::table('itens_pedidos')->where('pedido_id', $id)->get());
+        dd($itensPedido);
         $clientes = Cliente::all();
         $produtos = Produtos::all();
         return view('layouts._site.pedidos.editar', compact('pedido','itensPedido','clientes','produtos'));

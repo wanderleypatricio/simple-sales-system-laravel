@@ -29,12 +29,12 @@
         @foreach($pedidos as $pedido)
         <tr>
             <td>{{$pedido->id}}</td>
-            <td>{{$pedido->cliente_id}}</td>
+            <td>{{$pedido->nome}}</td>
             <td>{{$pedido->created_at}}</td>
             <td>{{$pedido->total}}</td>
             <td>{{$pedido->status}}</td>
             <td>
-                <!--<a class="material-icons" href="{{route('site.pedido.editar',$pedido->id)}}" title="Editar">edit</a>-->
+                <a class="material-icons" href="{{route('site.pedido.editar',$pedido->id)}}" title="Editar">edit</a>
                 <a class="material-icons" href="javascript:if(confirm('Deseja excluir este registro?')){window.location.href = '{{route('site.pedido.excluir',$pedido->id)}}'}" title="Excluir">delete</a>
             </td>
         </tr>

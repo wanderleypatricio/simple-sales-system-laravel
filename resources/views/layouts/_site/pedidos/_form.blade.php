@@ -8,7 +8,7 @@ Id:
 Cliente:
 <div class="input-field">
 
-   <select id="cliente" name="cliente" class="">
+   <select id="cliente" name="cliente" class="" required="required">
       <option value="null">Selecione o cliente</option>
       @if(isset($clientes)){
       @foreach($clientes as $cliente){
@@ -44,11 +44,11 @@ Itens da Venda:
 
 Total do pedido:
 <div class="input-field">
-   <input type="text" id="total" name="total" value="{{isset($pedido['total']) ? $pedido['total'] : ''}}">
+   <input type="text" id="total" name="total" value="{{isset($pedido['total']) ? $pedido['total'] : ''}}" required="required">
 </div>
 Status da Venda:
 <div class="input-field">
-   <select id="status" name="status">
+   <select id="status" name="status" required="required">
       <option value="null">Selecione o status da venda</option>
 
       <option value="aberto">Aberto</option>

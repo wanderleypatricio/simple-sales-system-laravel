@@ -2,13 +2,13 @@
 <div class="input-field">
     <label>Ordem:</label>
     <input type="text" name="ordem" 
-    class="validate" value="{{isset($galeria->ordem) ? $galeria->ordem : ''}}">
+    class="validate" required="required" value="{{isset($galeria->ordem) ? $galeria->ordem : ''}}">
     
 </div>
 <div class="row">
     <div class="file-field input-field col m6 s12">
         <div class="btn">
-            <input type="file" name="imagem">
+            <input type="file" name="imagem" required="required">
             arquivo
         </div>
         <div class="file-path-wrapper">
