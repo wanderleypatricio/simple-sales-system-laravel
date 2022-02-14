@@ -1,27 +1,7 @@
-# Laravel PHP Framework
+Este projeto é um sistema simples de cadastro de clientes, produtos e vendas.
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+O objetivo deste projeto é mostrar minhas habilidades no desenvolvimento de sistemas web utilizando Laravel, banco de dados sqlite, template blade e javascript.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+Este sistema lista todos os produtos cadastrados na página inicial, na parte superior o usuário tem acesso ao menu onde é possível cadastrar, listar itens cadastrados, editar e deletar dados do cliente, produto, imagens do produto. A parte das encomendas ainda só é possível registar e listar as encomendas.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
-
-## Official Documentation
-
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+para utilizar o sistema é necessário ter o composer instalado no computador. Com o composer instalado, baixe o projeto para a máquina no local de sua preferência e descompacte-o em uma pasta. Com o projeto descompactado, abra o terminal, acesse o diretório onde o projeto está localizado e digite o comando npm install, ele irá instalar todas as dependências necessárias para a execução do projeto. Após concluir a instalação, basta digitar o comando php artisa serve e o sistema estará rodando, agora é só acessar o navegador e digitar o endereço localhost:8000.
